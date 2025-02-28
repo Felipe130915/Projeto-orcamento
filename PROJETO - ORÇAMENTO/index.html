@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orçamento Sertão Moderno</title>
+    <link rel="shortcut icon" href="favicon_io/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="CSS/styles.css">
+    <script src="index.js"></script>
+</head> 
+<body>
+     <nav id="OCULTAR">
+        <div>
+            <img src="Logo Sertão Moderno.png" alt="Logo" class="logo">
+        </div>
+        <button onclick="clicar()" id="OCULTAR" class="glow-on-hover">SOMAR</button> <!--Botao para somar-->
+        <button onclick="window.location.reload()" id="OCULTAR" class="glow-on-hover">APAGAR</button> <!--botao para atualizar a pagina-->
+        <button onclick="window.print()" id="OCULTAR" class="glow-on-hover">IMPRIMIR</button> <!--Comando usado para imprimir a tela-->
+        <a href="https://wa.me/5588988188728" target="_blank"><button class="glow-on-hover">SUPORTE</button></a></a> <!-- bota de suporte-->
+    </nav>
+<div class="titulo"><h1><img src="Logo Sertão Moderno.png" alt="logotipo" width="80px" class="logoecnpj">
+<h5>CNPJ: 32.089.800/0001-17</h5>
+<h1> Orçamento</h1>
+ </div>
+
+<div>
+    <label for="Cliente" class="lab-cliente">Clienteh:</label>
+    <input type="text" required class="Cliente" placeholder="Nome e Sobrenome..." id="impressaocliente"><br>
+    <label for="Data" class="lab-data">Data:</label>
+    <input type="date" class="Data" id="impressaodata">
+</div>
+
+<input type="checkbox" name="" id="muda1">  <!-- usado para deixar o texto invisivel-->
+<div class="box1"><h2>Entradas</h2></div>
+<div><h3 id="impressaotitulo" class="sumirsubtitulo">Produto&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  Qt &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  R$&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  Total</h3></div>
+<div class="entradas" id="inputsimpressao">
+<input type="text" name="entrada" placeholder="Digite o nome do produto...."> <input type="number" class="Qtd" placeholder="Qt" oninput="Soma1()"> <input type="number" class="Preço" placeholder="Preço" oninput="Soma1()"> <input type="text" placeholder="Total" class="Total1" id="Total1" readonly><br><!--readonly usado para impedir que o usuario altere os inputs-->
+<input type="text" name="entrada" placeholder="Digite o nome do produto...."> <input type="number" class="Qtd" placeholder="Qt" oninput="Soma2()"> <input type="number" class="Preço" placeholder="Preço" oninput="Soma2()"> <input type="text" placeholder="Total" class="Total2" id="Total2" readonly><br><!--readonly usado para impedir que o usuario altere os inputs-->
+<input type="text" name="entrada" placeholder="Digite o nome do produto...."> <input type="number" class="Qtd" placeholder="Qt" oninput="Soma3()"> <input type="number" class="Preço" placeholder="Preço" oninput="Soma3()"> <input type="text" placeholder="Total" class="Total1" id="Total3" readonly><br><!--readonly usado para impedir que o usuario altere os inputs-->
+<input type="text" name="entrada" placeholder="Digite o nome do produto...."> <input type="number" class="Qtd" placeholder="Qt" oninput="Soma4()"> <input type="number" class="Preço" placeholder="Preço" oninput="Soma4()"> <input type="text" placeholder="Total" class="Total1" id="Total4" readonly><br><!--readonly usado para impedir que o usuario altere os inputs-->
+<input type="text" name="entrada" placeholder="Digite o nome do produto...."> <input type="number" class="Qtd" placeholder="Qt" oninput="Soma5()"> <input type="number" class="Preço" placeholder="Preço" oninput="Soma5()"> <input type="text" placeholder="Total" class="Total1" id="Total5" readonly><br><!--readonly usado para impedir que o usuario altere os inputs-->
+<input type="text" name="entrada" placeholder="Digite o nome do produto...."> <input type="number" class="Qtd" placeholder="Qt" oninput="Soma6()"> <input type="number" class="Preço" placeholder="Preço" oninput="Soma6()"> <input type="text" placeholder="Total" class="Total1" id="Total6" readonly><br><!--readonly usado para impedir que o usuario altere os inputs-->
+<input type="text" name="entrada" placeholder="Digite o nome do produto...."> <input type="number" class="Qtd" placeholder="Qt" oninput="Soma7()"> <input type="number" class="Preço" placeholder="Preço" oninput="Soma7()"> <input type="text" placeholder="Total" class="Total1" id="Total7" readonly><br><!--readonly usado para impedir que o usuario altere os inputs-->
+</div>
+
+<input type="checkbox" name="" id="muda2">  <!-- usado para deixar o texto invisivel-->
+<div class="box2"><h2>Prato Principal</h2></div>
+<div class="Principal" id="inputsimpressao">
+<input type="text" name="Principal" placeholder="Digite o nome do produto...."> <input type="number" class="Qtd" placeholder="Qt" oninput="Soma8()"> <input type="number" class="Preço" placeholder="Preço" oninput="Soma8()"> <input type="text" placeholder="Total" class="Total" id="Total8" readonly><br>
+<input type="text" name="Principal" placeholder="Digite o nome do produto...."> <input type="number" class="Qtd" placeholder="Qt" oninput="Soma9()"> <input type="number" class="Preço" placeholder="Preço" oninput="Soma9()"> <input type="text" placeholder="Total" class="Total" id="Total9" readonly><br>
+<input type="text" name="Principal" placeholder="Digite o nome do produto...."> <input type="number" class="Qtd" placeholder="Qt" oninput="Soma10()"> <input type="number" class="Preço" placeholder="Preço" oninput="Soma10()"> <input type="text" placeholder="Total" class="Total" id="Total10" readonly><br>
+<input type="text" name="Principal" placeholder="Digite o nome do produto...."> <input type="number" class="Qtd" placeholder="Qt" oninput="Soma11()"> <input type="number" class="Preço" placeholder="Preço" oninput="Soma11()"> <input type="text" placeholder="Total" class="Total" id="Total11" readonly><br>
+<input type="text" name="Principal" placeholder="Digite o nome do produto...."> <input type="number" class="Qtd" placeholder="Qt" oninput="Soma12()"> <input type="number" class="Preço" placeholder="Preço" oninput="Soma12()"> <input type="text" placeholder="Total" class="Total" id="Total12" readonly><br>
+<input type="text" name="Principal" placeholder="Digite o nome do produto...."> <input type="number" class="Qtd" placeholder="Qt" oninput="Soma13()"> <input type="number" class="Preço" placeholder="Preço" oninput="Soma13()"> <input type="text" placeholder="Total" class="Total" id="Total13" readonly><br>
+<input type="text" name="Principal" placeholder="Digite o nome do produto...."> <input type="number" class="Qtd" placeholder="Qt" oninput="Soma14()"> <input type="number" class="Preço" placeholder="Preço" oninput="Soma14()"> <input type="text" placeholder="Total" class="Total" id="Total14" readonly><br>
+<input type="text" name="Principal" placeholder="Digite o nome do produto...."> <input type="number" class="Qtd" placeholder="Qt" oninput="Soma15()"> <input type="number" class="Preço" placeholder="Preço" oninput="Soma15()"> <input type="text" placeholder="Total" class="Total" id="Total15" readonly><br>
+<input type="text" name="Principal" placeholder="Digite o nome do produto...."> <input type="number" class="Qtd" placeholder="Qt" oninput="Soma16()"> <input type="number" class="Preço" placeholder="Preço" oninput="Soma16()"> <input type="text" placeholder="Total" class="Total" id="Total16" readonly><br>
+<input type="text" name="Principal" placeholder="Digite o nome do produto...."> <input type="number" class="Qtd" placeholder="Qt" oninput="Soma17()"> <input type="number" class="Preço" placeholder="Preço" oninput="Soma17()"> <input type="text" placeholder="Total" class="Total" id="Total17" readonly><br>
+</div>
+
+<input type="checkbox" name="" id="muda3">  <!-- usado para deixar o texto invisivel-->
+<div class="box3"><h2>Bebidas</h2></div>
+<div class="Bebidas" id="inputsimpressao">
+<input type="text" name="Bebidas" placeholder="Digite o nome do produto...."> <input type="number" class="Qtd" placeholder="Qt" oninput="Soma18()"> <input type="number" class="Preço" placeholder="Preço" oninput="Soma18()"> <input type="text" placeholder="Total" class="Total" id="Total18" readonly><br>   
+<input type="text" name="Bebidas" placeholder="Digite o nome do produto...."> <input type="number" class="Qtd" placeholder="Qt" oninput="Soma19()"> <input type="number" class="Preço" placeholder="Preço" oninput="Soma19()"> <input type="text" placeholder="Total" class="Total" id="Total19" readonly><br>   
+<input type="text" name="Bebidas" placeholder="Digite o nome do produto...."> <input type="number" class="Qtd" placeholder="Qt" oninput="Soma20()"> <input type="number" class="Preço" placeholder="Preço" oninput="Soma20()"> <input type="text" placeholder="Total" class="Total" id="Total20" readonly><br>   
+</div>
+
+<input type="checkbox" name="" id="muda4">  <!-- usado para deixar o texto invisivel-->
+<div class="box4"><h2>Sobremesas</h2></div>
+<div class="Sobremesas" id="inputsimpressao">
+<input type="text" name="Sobremesas" placeholder="Digite o nome do produto...."> <input type="number" class="Qtd" placeholder="Qt" oninput="Soma21()"> <input type="number" class="Preço" placeholder="Preço" oninput="Soma21()"> <input type="text" placeholder="Total" class="Total" id="Total21" readonly><br>
+<input type="text" name="Sobremesas" placeholder="Digite o nome do produto...."> <input type="number" class="Qtd" placeholder="Qt" oninput="Soma22()"> <input type="number" class="Preço" placeholder="Preço" oninput="Soma22()"> <input type="text" placeholder="Total" class="Total" id="Total22" readonly><br>
+<input type="text" name="Sobremesas" placeholder="Digite o nome do produto...."> <input type="number" class="Qtd" placeholder="Qt" oninput="Soma23()"> <input type="number" class="Preço" placeholder="Preço" oninput="Soma23()"> <input type="text" placeholder="Total" class="Total" id="Total23" readonly><br>
+
+<label for="Desconto" class="Desconto1">Desconto%:</label>
+<input type="text" name="Desconto" class="Desconto" placeholder="%"><br><br>
+<label for="Total-geral" class="Total-geral">Total R$:</label>
+<input type="number" class="resultado" id="resultado">
+</div>
+</div>
+<footer>© 2025 Felipe.dev - Todos os direitos reservados.</footer>
+</body>
+</html>
